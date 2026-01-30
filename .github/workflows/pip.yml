@@ -1,0 +1,24 @@
+name: Two Jobs Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      user_text:
+        description: my trigger 
+        required: false
+        default: 'Hello Default World'
+
+jobs:
+  
+  print-build-id:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Run ID
+        run: echo "The Build ID is ${{ github.run_id }}"
+
+  
+  print-parameter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show User Text
+        run: echo "The text is ${{ github.event.inputs.user_text }}"
