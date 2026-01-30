@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run a Welcome Message
-        run: echo "Hello! Your first CI/CD pipeline is running successfully."
+        run: echo "Hellooo! Your first CI/CD pipeline is running successfully."
 
 
 
