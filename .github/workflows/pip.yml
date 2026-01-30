@@ -5,7 +5,7 @@ on:
     inputs:
       user_text:
         description: my trigger------------------------- 
-        required: false
+        required: true
         default: 'Hello Default World'
 
 jobs:
